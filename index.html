@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Lomba Olahraga</title>
+    <style>
+        /* Reset margin dan padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* Mengatur gaya dasar untuk elemen utama */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #fdfdfd; 
+        }
+        /* Gaya untuk elemen header, footer, dan main */
+        header, footer {
+            background-color: #94c9fe; 
+            padding: 1.5em;
+            text-align: center;
+            border-radius: 12px;
+            margin-bottom: 1em;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            padding: 1em;
+            background-color: #f7fafc; 
+            border-radius: 12px;
+        }
+        /* Gaya untuk elemen nav, article, dan aside */
+        nav, article, aside {
+            background-color: #94c9fe; 
+            padding: 1em;
+            margin: 0.5em 0;
+            border: 1px solid #94c9fe; 
+            border-radius: 12px; /* Membuat sudut yang lebih bulat */
+        }
+        /* Layout untuk konten utama */
+        .content-wrapper {
+            display: flex;
+            gap: 1em;
+        }
+        .articles {
+            flex: 3;
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+        }
+        aside {
+            flex: 1;
+        }
+        /* Link navigasi */
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        /* Responsive */
+        @media (max-width: 768px) {
+            .content-wrapper {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Bagian Header -->
+    <header>
+        <h1>Pendaftaran Peserta Lomba Olahraga</h1>
+        <nav>
+            <a href="#home">Home</a> |
+            <a href="#about">Tentang</a> |
+            <a href="pendaftaran.html">Daftar</a> |
+            <a href="#contact">Kontak</a>
+        </nav>
+    </header>
+
+    <!-- Bagian Main -->
+    <main>
+        <section id="intro">
+            <article>
+                <h2>Selamat Datang di Lomba Olahraga Nasional</h2>
+                <p>Lomba ini bertujuan untuk mencari bibit-bibit unggul dalam dunia olahraga di Indonesia. Kami mengundang para atlet dari seluruh penjuru negeri untuk bergabung dan menunjukkan bakat mereka.
+                    Lomba Olahraga Nasional diadakan dengan tujuan untuk mencari dan mengembangkan bakat-bakat unggul dalam berbagai cabang olahraga di Indonesia. Acara ini diharapkan dapat menemukan atlet muda yang memiliki potensi besar dan berprestasi di tingkat nasional maupun internasional. Selain meningkatkan kualitas olahraga nasional, kompetisi ini juga bertujuan membangun karakter peserta dengan nilai sportivitas, disiplin, dan kerja keras. Lomba ini memberikan kesempatan bagi atlet muda dari seluruh Indonesia untuk memperoleh pengalaman berharga, memperluas jaringan, dan berpotensi dilirik oleh klub atau lembaga olahraga profesional. Kami juga ingin mempererat persatuan dan kebersamaan melalui olahraga dengan mempertemukan atlet-atlet dari berbagai daerah dan latar belakang yang berbeda. Kami mengundang para atlet berbakat untuk bergabung dan menunjukkan kemampuan terbaik mereka dalam upaya mengharumkan nama Indonesia di dunia olahraga.
+                </p>
+            </article>
+        </section>
+        
+        <div class="content-wrapper">
+            <!-- Artikel Utama -->
+            <div class="articles">
+                <article>
+                    <h2>Persyaratan Pendaftaran</h2>
+                    <p>Setiap peserta harus memenuhi persyaratan berikut untuk mendaftar:</p>
+                    <ul>
+                        <li>Warga Negara Indonesia</li>
+                        <li>Berusia 18-35 tahun</li>
+                        <li>Mempunyai pengalaman minimal 1 tahun di bidang olahraga yang dipilih</li>
+                    </ul>
+                </article>
+                <article>
+                    <h2>Jadwal dan Lokasi</h2>
+                    <p>Lomba akan diadakan pada tanggal 15 November 2024 Stadion Gelora Bung Karno, Jakarta. Peserta diharapkan hadir tepat waktu dan membawa peralatan masing-masing.</p>
+                </article>
+            </div>
+
+            <!-- Bagian Aside -->
+            <aside>
+                <h2>Foto & Biodata</h2>
+                <img src="yunita.jpg" alt="Foto Peserta" style="width:100%; height:auto; border-radius: 8px;">
+                <p><strong>Nama:</strong> Yunita Sari</p>
+                <p><strong>Usia:</strong> 20 tahun</p>
+                <p><strong>Latar Belakang:</strong> Atlet nasional futsal putri dari klub Pusaka FC.</p>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Bagian Footer -->
+    <footer>
+        <p>&copy; 2024 Panitia Lomba Olahraga Nasional. Semua Hak Dilindungi.</p>
+    </footer>
+</body>
+</html>

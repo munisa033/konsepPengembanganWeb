@@ -1,0 +1,112 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background Putih */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #fff;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #ff80ab; /* Pink */
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin-bottom: 0.5em;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    padding: 2em;
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Styling */
+main section {
+    background-color: #ffcce6; /* Soft Pink */
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+    border-radius: 8px;
+}
+
+.intro h2, .requirements h3, .schedule h3, .biodata h3 {
+    color: #d5006d; /* Darker Pink */
+    margin-bottom: 1em;
+}
+
+/* List Styling */
+ul {
+    padding-left: 1.5em;
+}
+
+ul li {
+    margin-bottom: 0.5em;
+}
+
+/* Biodata Section */
+.biodata-content {
+    display: flex;
+    align-items: center;
+}
+
+.biodata-content img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.biodata-text p {
+    margin: 0.3em 0;
+}
+
+/* Footer */
+footer {
+    background-color: #ff80ab;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        padding: 1em;
+    }
+    
+    .biodata-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .biodata-content img {
+        margin-bottom: 1em;
+    }
+}
