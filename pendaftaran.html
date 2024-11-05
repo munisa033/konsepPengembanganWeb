@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran Lomba Olahraga</title>
+    <style>
+        /* Reset margin dan padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* Mengatur flexbox pada elemen utama */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #e0f7ff; /* Biru sangat pudar untuk latar belakang body */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        /* Style untuk form pendaftaran */
+        .form-container {
+            width: 100%;
+            max-width: 500px;
+            padding: 20px;
+            background-color: #ffffff; /* Putih untuk latar belakang form */
+            border: 1px solid #b3e5fc; /* Biru pudar untuk border */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #1565c0; /* Biru lebih gelap untuk judul */
+            margin-bottom: 1em;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5em;
+            font-weight: bold;
+            color: #1565c0; /* Biru gelap untuk label */
+        }
+        input[type="text"], input[type="email"], input[type="number"], select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 1em;
+            border: 1px solid #b3e5fc; /* Biru pudar untuk border */
+            border-radius: 4px;
+            background-color: #e3f2fd; /* Biru lembut */
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #1565c0; /* Biru lebih gelap untuk tombol */
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0d47a1; /* Biru lebih gelap saat hover */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Kontainer Form -->
+    <div class="form-container">
+        <h2>Form Pendaftaran Lomba Olahraga</h2>
+        <form action="submit-pendaftaran.php" method="post">
+            <!-- Nama Lengkap -->
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" id="nama" name="nama" required>
+
+            <!-- Email -->
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- Nomor Telepon -->
+            <label for="telepon">Nomor Telepon</label>
+            <input type="text" id="telepon" name="telepon" required>
+
+            <!-- Usia -->
+            <label for="usia">Usia</label>
+            <input type="number" id="usia" name="usia" required>
+
+            <!-- Cabang Olahraga -->
+            <label for="cabang">Cabang Olahraga</label>
+            <select id="cabang" name="cabang" required>
+                <option value="">Pilih Cabang Olahraga</option>
+                <option value="sepak bola">Sepak Bola</option>
+                <option value="basket">Basket</option>
+                <option value="bulu tangkis">Bulu Tangkis</option>
+                <option value="tenis">Tenis</option>
+                <option value="renang">Renang</option>
+            </select>
+
+            <!-- Alamat -->
+            <label for="alamat">Alamat</label>
+            <textarea id="alamat" name="alamat" rows="4" required></textarea>
+
+            <!-- Tombol Submit -->
+            <button type="submit">Daftar Sekarang</button>
+        </form>
+    </div>
+
+</body>
+</html>
+
+
